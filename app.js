@@ -72,6 +72,54 @@ function renderStore(table, store) {
     table.appendChild(placeStoreHere);
 };
 
+function renderNewStore(newName, newMinimum, newMaximum, newAverage) {
+  tbl = document.getElementById('table');
+  var newStore = new Store(newName, newMinimum, newMaximum, newAverage);
+}
+
+function renderUpdate(newStore, min, max, avg) {
+  var addsNewStore = document.getElementById(newStore.newName.replace(' ', ''));
+
+  newStore.minCustomer = min;
+  newStore.maxCustomer = max;
+  newStore.avgCustomer = avg;
+  newStore.perHourTotals = [];
+  newStore.grandTotal = 0;
+  newStore.hourTotal();
+
+  for (var i = 0; i < newStore.perHourTotals.length; i++) {
+    addsNewStore.childNodes[i + 1].textContent = newStore.perHourTotals[i];
+  }
+  addsNewStore.childNodes[addsNewStore.childNodes.length-1].textContent = newStore.grandTotal;
+}
+
+document.getElementById('add-store').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var exists = false;
+  var store = event.target.store.value;
+  var min = parseInt(event.target.min.value);
+  var max = parseInt(event.target.max.value);
+  var avg = parseInt(event.target.avg.value);
+
+  for (var i = 0; i < stores.length; i++) {
+    if (stores[i].id === store.replace(' ', '')) {
+      exists = true;
+      break;
+    }
+  }
+
+  if (exists === true) {
+    renderUpdate(stores[i], min, max, avg);
+  } else {
+    renderNewStore(store, min, max, avg);
+  }
+
+  event.target.store.value = null;
+  event.target.min.value = null;
+  event.target.max.value = null;
+  event.target.avg.value = null;
+});
+
 var pikePlace = new Store('Pike Place', 17, 88, 5.2);
 var seaTac = new Store('SeaTac Airport', 6, 44, 1.2);
 var southCenter = new Store('Southcenter Mall', 11, 38, 1.9);
