@@ -77,7 +77,7 @@ function renderNewStore(newName, newMinimum, newMaximum, newAverage) {
   var newStore = new Store(newName, newMinimum, newMaximum, newAverage);
 }
 
-function renderUpdate(newStore, min, max, avg) {
+function update(newStore, min, max, avg) {
   var addsNewStore = document.getElementById(newStore.newName.replace(' ', ''));
 
   newStore.minCustomer = min;
@@ -92,6 +92,7 @@ function renderUpdate(newStore, min, max, avg) {
   }
   addsNewStore.childNodes[addsNewStore.childNodes.length-1].textContent = newStore.grandTotal;
 }
+
 
 document.getElementById('add-store').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -109,7 +110,7 @@ document.getElementById('add-store').addEventListener('submit', function(event) 
   }
 
   if (exists === true) {
-    renderUpdate(stores[i], min, max, avg);
+    update(stores[i], min, max, avg);
   } else {
     renderNewStore(store, min, max, avg);
   }
