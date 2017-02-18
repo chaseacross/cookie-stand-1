@@ -1,0 +1,113 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+a:link {
+  color: #00991c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f9b77c;
+  text-decoration: none;
+}
+.salmon-logo {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+.header
+{
+  background-color: #f9b77c;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  font-family: Garamond;
+  color: #3d2e15;
+}
+
+.nav
+{
+
+  background-color: #3d2e15;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col1,.col2
+{
+  float: left;
+  /*background-color: #eee;*/
+  margin-bottom: 1em;
+  margin-left: 3%;
+}
+
+.col1 {
+  width: 20%;
+  padding: .5em;
+  line-height: 2em;
+  background-color: #f9b77c;
+  color: #3d2e15;
+  font-family: helvetica;
+}
+
+.col2 {
+  width: 25%;
+  line-height: 3em;
+  background-color: #f9b77c;
+  color: #3d2e15;
+  font-family: helvetica;
+}
+
+.col3 {
+  float: right;
+  width: 45%;
+  text-align: center;
+  color: #3d2e15;
+  font-style: italic;
+}
+
+.footer
+{
+  clear: both;
+  padding: 1em 2em;
+  color: #f9b77c;
+  background-color: #3d2e15;
+}
+
+/*style for sales.html*/
+
+#store_data {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+
+.new-data {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.sales-col1,.sales-col2,.sales-col3 {
+	float: left;
+	margin-bottom: 1em;
+	margin-left: 3%;
+}
+
+.sales-col1 {
+  width: 20%;
+ }
+.sales-col2 {
+  width: 48%;
+ }
+.sales-col3 {
+  width: 20%;
+ }
