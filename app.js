@@ -71,7 +71,7 @@ function renderStore(table, store) {
 
     table.appendChild(placeStoreHere);
 };
-
+// function creates a new store from input in form!!!
 function renderNewStore(newName, newMinimum, newMaximum, newAverage) {
   tbl = document.getElementById('table');
   var newStore = new Store(newName, newMinimum, newMaximum, newAverage);
