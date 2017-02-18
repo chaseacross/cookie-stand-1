@@ -5,12 +5,12 @@ ul {
 }
 
 a:link {
-  color: #00991c;
+  color: #3d2e15;
   text-decoration: none;
 }
 
 a:visited {
-  color: #f9b77c;
+  color: #3d2e15;
   text-decoration: none;
 }
 .salmon-logo {
@@ -18,8 +18,7 @@ a:visited {
   justify-content: center;
   margin: 1em;
 }
-.header
-{
+.header {
   background-color: #f9b77c;
   padding: 1em 2em;
   margin-bottom: 1em;
@@ -30,14 +29,17 @@ a:visited {
   font-size: 40px;
 }
 
-.nav
-{
-
+.nav  {
   background-color: #3d2e15;
   padding: 1em 2em;
   margin-bottom: 1em;
   display: flex;
   justify-content: space-around;
+}
+
+.merch-button,.sales-button,.home-button {
+  padding: .3em;
+  background-color: #f9b77c;
 }
 
 .col1,.col2
