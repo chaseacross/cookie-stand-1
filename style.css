@@ -1,0 +1,166 @@
+body {
+  background-image: url(assets/cookiebg.jpg);
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  background-color: tan;
+  background-blend-mode: luminosity;
+}
+
+ul {
+  list-style: none;
+  line-height: 2.7em;
+  margin: .6em;
+}
+
+a:link {
+  color: #3d2e15;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3d2e15;
+  text-decoration: none;
+}
+.salmon-logo {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+/*header style!*/
+.header {
+  background-color: #f9b77c;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  font-family: Garamond;
+  color: #3d2e15;
+  font-size: 40px;
+  border: solid white 4px;
+}
+
+.nav  {
+  background-color: #3d2e15;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+  border: solid white 4px;
+}
+
+.merch-button,.sales-button,.home-button {
+  padding: .3em;
+  background-color: #f9b77c;
+}
+
+/*end header style*/
+
+/*styling main grid*/
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;;
+  margin: .5em;
+}
+
+.col1,.col2 {
+  border: solid white 4px;
+}
+
+.col1 {
+  width: 20%;
+  height: 40%;
+  padding: .5em;
+  line-height: 2em;
+  background-color: #f9b77c;
+  color: #3d2e15;
+  font-family: helvetica;
+  margin-left: 4em;
+  margin-right: 5em;
+}
+
+.col2 {
+  width: 30%;
+  background-color: #f9b77c;
+  color: #3d2e15;
+  font-family: helvetica;
+  margin-right: 1em;
+}
+
+/*.col3 {
+  width: 30%;
+  margin-right: 3em;
+  margin-left: 5em;
+}*/
+
+.col4 {
+  width: 48%;
+  text-align: center;
+  color: #3d2e15;
+  background-color: white;
+  font-style: italic;
+  font-size: 40px;
+  margin-left: 2em;
+  margin-right: 2em;
+  border: solid white 4px;
+}
+
+.footer
+{
+  clear: both;
+  padding: .5em .9em;
+  color: #f9b77c;
+  background-color: #3d2e15;
+  margin-top: 1em;
+  border: solid white 4px;
+}
+
+/*style for sales.html*/
+
+#store_data {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  background-color: white;
+}
+
+
+.new-data {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  background-color: white;
+}
+
+.sales-col1,.sales-col2,.sales-col3 {
+	float: left;
+	margin-bottom: 1em;
+	margin-left: 3%;
+}
+
+.sales-col1 {
+  width: 20%;
+ }
+.sales-col2 {
+  width: 48%;
+ }
+.sales-col3 {
+  width: 20%;
+ }
+
+/*style for merchandise page*/
+
+.tshirt {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px black;
+}
